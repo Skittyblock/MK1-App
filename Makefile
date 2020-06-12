@@ -1,4 +1,5 @@
-THEOS_OBJ_DIR_NAME = obj-app # Required to avoid errors with the directory being named "MK1" and the cli tool being named "mk1"
+THEOS_OBJ_DIR_NAME = obj-app
+# Required to avoid errors with the directory being named "MK1" and the cli tool being named "mk1"
 
 include $(THEOS)/makefiles/common.mk
 
