@@ -29,8 +29,6 @@
     self.triggers = [[MKManager sharedInstance] triggerList];
     self.selectedTriggers = [[[MKManager sharedInstance] triggersForScript:self.script] mutableCopy];
     
-    NSLog(@"self.selectedTriggers: %@", self.selectedTriggers);
-    
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

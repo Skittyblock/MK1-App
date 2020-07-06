@@ -35,6 +35,7 @@
 }
 
 // List of MK1 triggers
+// TODO: Add descriptions
 - (NSArray<NSString *> *)triggerList {
     return @[
         @"HWBUTTON-VOLUP",
@@ -163,8 +164,15 @@
     }
 }
 
-// Delete script with name
+// Delete script
 - (void)deleteScript:(MKScript *)script {
+    // Remove from script database
+    NSMutableDictionary *scriptDatabase = [[self scriptsDatabase] mutableCopy];
+    [scriptDatabase removeObjectForKey:script.name];
+    NSString *dbPath = [[[self scriptsDirectory] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"scripts.plist"];
+    [scriptDatabase writeToFile:dbPath atomically:YES];
+    
+    // Remove script
     NSString *path = script.path;
     [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"xyz.skitty.mk1.refreshscripts" object:nil];
@@ -213,7 +221,7 @@
 
 // Trigger list for script
 - (NSArray<NSString *> *)triggersForScript:(MKScript *)script {
-    NSMutableDictionary *scriptDatabase = [[self scriptsDatabase] mutableCopy];
+    NSDictionary *scriptDatabase = [self scriptsDatabase];
     if ([scriptDatabase objectForKey:script.name]) {
         return scriptDatabase[script.name][@"triggers"] ?: @[];
     }
