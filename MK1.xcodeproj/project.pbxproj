@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1B1ABB250E6E39006C6131 /* MKCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1B1AB9250E6E39006C6131 /* MKCloudViewController.m */; };
 		FB2FCC8E2488659000124EA5 /* MKTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FCC8D2488659000124EA5 /* MKTextStorage.m */; };
 		FB2FCC91248865AD00124EA5 /* MKCodeTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FCC90248865AD00124EA5 /* MKCodeTheme.m */; };
 		FB2FCC94248865BD00124EA5 /* MKHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FCC93248865BD00124EA5 /* MKHighlighter.m */; };
@@ -113,6 +114,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1B1AB9250E6E39006C6131 /* MKCloudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCloudViewController.m; sourceTree = "<group>"; };
+		FB1B1ABA250E6E39006C6131 /* MKCloudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCloudViewController.h; sourceTree = "<group>"; };
 		FB2FCC8C2488659000124EA5 /* MKTextStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTextStorage.h; sourceTree = "<group>"; };
 		FB2FCC8D2488659000124EA5 /* MKTextStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTextStorage.m; sourceTree = "<group>"; };
 		FB2FCC8F248865AD00124EA5 /* MKCodeTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKCodeTheme.h; sourceTree = "<group>"; };
@@ -256,6 +259,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1B1AB8250E6E39006C6131 /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				FB1B1ABA250E6E39006C6131 /* MKCloudViewController.h */,
+				FB1B1AB9250E6E39006C6131 /* MKCloudViewController.m */,
+			);
+			path = Cloud;
+			sourceTree = "<group>";
+		};
 		FB2FCBD724881FBD00124EA5 /* Syntax */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				FB67027A2487ECFB0080606A /* Scripts */,
+				FB1B1AB8250E6E39006C6131 /* Cloud */,
 				FB67027B2487ED2D0080606A /* Editor */,
 				FB6702762487ECA10080606A /* Settings */,
 			);
@@ -643,6 +656,7 @@
 				FB2FCC98248C723500124EA5 /* MKManager.m in Sources */,
 				FB670260248460F50080606A /* main.m in Sources */,
 				FB2FCC8E2488659000124EA5 /* MKTextStorage.m in Sources */,
+				FB1B1ABB250E6E39006C6131 /* MKCloudViewController.m in Sources */,
 				FB670268248464E70080606A /* MKScript.m in Sources */,
 				FB670255248460F10080606A /* MKConsoleViewController.m in Sources */,
 				FB67024C248460F10080606A /* MKAppDelegate.m in Sources */,

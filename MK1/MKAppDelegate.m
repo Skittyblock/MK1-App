@@ -2,7 +2,7 @@
 
 #import "MKAppDelegate.h"
 #import "MKScriptsViewController.h"
-#import "MKConsoleViewController.h"
+#import "MKCloudViewController.h"
 #import "UIBackgroundStyle.h"
 #import "CPDistributedMessagingCenter.h"
 #import <rocketbootstrap/rocketbootstrap.h>
@@ -13,17 +13,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     MKScriptsViewController *scriptsViewController = [[MKScriptsViewController alloc] init];
-    scriptsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Scripts" image:[UIImage imageNamed:@"archivebox"] tag:0];
     UINavigationController *scriptsNavController = [[UINavigationController alloc] initWithRootViewController:scriptsViewController];
+    scriptsNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Scripts" image:[UIImage imageNamed:@"archivebox.fill"] tag:0];
     
-    MKConsoleViewController *consoleViewController = [[MKConsoleViewController alloc] init];
-    consoleViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Console" image:[UIImage imageNamed:@"doc.plaintext"] tag:0];
-    UINavigationController *consoleNavController = [[UINavigationController alloc] initWithRootViewController:consoleViewController];
+    MKCloudViewController *cloudViewController = [[MKCloudViewController alloc] init];
+    UINavigationController *cloudNavController = [[UINavigationController alloc] initWithRootViewController:cloudViewController];
+    cloudNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Cloud" image:[UIImage imageNamed:@"cloud.fill"] tag:0];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[scriptsNavController, consoleNavController];
+    tabBarController.viewControllers = @[scriptsNavController, cloudNavController];
     
-    [self.window setRootViewController:scriptsNavController]; //tabBarController;
+    [self.window setRootViewController:tabBarController]; //tabBarController;
     [self.window makeKeyAndVisible];
     
     self.window.backgroundColor = [UIColor clearColor];
