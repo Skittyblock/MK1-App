@@ -323,7 +323,7 @@
 		FB6702752487EC910080606A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				FB67027A2487ECFB0080606A /* Home */,
+				FB67027A2487ECFB0080606A /* Scripts */,
 				FB67027B2487ED2D0080606A /* Editor */,
 				FB6702762487ECA10080606A /* Settings */,
 			);
@@ -341,7 +341,7 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		FB67027A2487ECFB0080606A /* Home */ = {
+		FB67027A2487ECFB0080606A /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
 				FB670250248460F10080606A /* MKScriptsViewController.h */,
@@ -351,7 +351,7 @@
 				FB6702722487E82D0080606A /* MKScriptCollectionViewCell.h */,
 				FB6702732487E82D0080606A /* MKScriptCollectionViewCell.m */,
 			);
-			path = Home;
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 		FB67027B2487ED2D0080606A /* Editor */ = {
@@ -725,6 +725,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(DEF_CFLAGS)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -776,6 +777,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "$(DEF_CFLAGS)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

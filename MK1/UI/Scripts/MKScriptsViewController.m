@@ -36,12 +36,7 @@
         [self.view addSubview:effectView];
     }
     
-    UIImage *gearImage;
-    if (@available(iOS 13, *)) {
-        gearImage = [UIImage systemImageNamed:@"gear"];
-    } else {
-        // gearImage = [UIImage imageNamed:@"gear"];
-    }
+    UIImage *gearImage = [UIImage imageNamed:@"gear"];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:gearImage style:UIBarButtonItemStylePlain target:self action:@selector(openSettings)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewScript)];
     
