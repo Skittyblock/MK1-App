@@ -130,10 +130,6 @@
 		FB2FCC9D248DAA3500124EA5 /* MKScriptSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKScriptSettingsViewController.m; sourceTree = "<group>"; };
 		FB2FCC9F248DC15700124EA5 /* MKSelectTriggerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKSelectTriggerViewController.h; sourceTree = "<group>"; };
 		FB2FCCA0248DC15700124EA5 /* MKSelectTriggerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKSelectTriggerViewController.m; sourceTree = "<group>"; };
-		FB2FCCA3248EEE9D00124EA5 /* librocketbootstrap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = librocketbootstrap.tbd; path = ../../../theos/vendor/lib/librocketbootstrap.tbd; sourceTree = "<group>"; };
-		FB2FCCA4248EEECD00124EA5 /* librocketbootstrap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = librocketbootstrap.tbd; path = "MK1 App/librocketbootstrap.tbd"; sourceTree = "<group>"; };
-		FB2FCCA5248EEFC200124EA5 /* librocketbootstrap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = librocketbootstrap.tbd; sourceTree = "<group>"; };
-		FB2FCCA7248EF36400124EA5 /* AppSupport.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = AppSupport.tbd; sourceTree = "<group>"; };
 		FB6405A5248F08E900C32C94 /* HTMLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLUtils.h; sourceTree = "<group>"; };
 		FB6405A6248F08E900C32C94 /* HTMLUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLUtils.m; sourceTree = "<group>"; };
 		FB6405A8249276E600C32C94 /* MKEditableTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKEditableTableViewCell.h; sourceTree = "<group>"; };
@@ -287,12 +283,8 @@
 		FB2FCCA2248EEE9D00124EA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB89E3592492FA2D005E4258 /* librocketbootstrap.tbd */,
-				FB2FCCA7248EF36400124EA5 /* AppSupport.tbd */,
 				FB89E3572492FA16005E4258 /* AppSupport.tbd */,
-				FB2FCCA5248EEFC200124EA5 /* librocketbootstrap.tbd */,
-				FB2FCCA4248EEECD00124EA5 /* librocketbootstrap.tbd */,
-				FB2FCCA3248EEE9D00124EA5 /* librocketbootstrap.tbd */,
+				FB89E3592492FA2D005E4258 /* librocketbootstrap.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

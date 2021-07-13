@@ -4,5 +4,7 @@
 <dict>
 	<key>com.apple.springboard.appbackgroundstyle</key>
 	<true/>
+	<key>com.apple.private.security.no-container</key>
+	<true/>
 </dict>
 </plist>
